@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forside.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <title>Stakbogladen - Stakkevis af viden</title>
+</head>
+<body>
+    <!-- Header og navigation -->
+  <header class="small_header">
+    <a href="index.html">
+        <img src="/images/logo.png" alt="Logo" width="40">
+        <h1>Stakbogladen</h1>
+    </a>
+    <span class="material-icons-outlined" id="account">account_circle</span>
+    <span class="material-icons-outlined" id="cart">shopping_cart</span>
+    <nav id="ham_nav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <div id="ham_items">
+            <a href="#">Bøger</a>
+            <a href="boglister.html">Boglister</a>
+            <a href="#">Kontorartikler</a>
+            <a href="#">Events</a>
+            <a href="#">Kampagner</a>
+            <a href="#">AU Merchandise</a>
+        </div>
+    </nav>
+  </header>
+  <!--Navigationsbar til bærbar/stationær -->
+  <nav id="bar_nav">
+    <div class="navigation_wrapper">
+        <div class="navigation_items">
+            <ul class="dropdown">
+                <li><a href="#bøger">Bøger</a>
+                    <ul>
+                        <li><a href="#">Faglitteratur</a></li>
+                        <li><a href="#">Skønlitteratur</a></li>
+                        <li><a href="#">Brugte bøger</a></li>
+                        <li><a href="#">Lej en bog</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li><a href="boglister.html">Boglister</a>
+                    <ul>
+                        <li><a href="#">For studerende</a></li>
+                        <li><a href="#">For undervisere</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li><a href="#kontorartikler">Kontorartikler</a>
+                    <ul>
+                      <li><a href="#">Til studiestart</a></li>
+                      <li><a href="#">Mapper</a></li>
+                      <li><a href="#">Skriveredskaber</a></li>
+                      <li><a href="#">Papir</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li><a href="#info">Om os</a>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Handelsbetingelser</a></li>
+                        <li><a href="#">Ofte stillede spørgsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li><a href="#events">Events</a>
+                    <ul>
+                        <li><a href="#">Launch events</a></li>
+                        <li><a href="#">Loppemarked</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li><a href="#kampagner">Kampagner</a>
+                    <ul>
+                        <li><a href="#">Kaffeglad?</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- Søgefelt -->
+  <nav id="searchbar">
+      <form id="search">
+          <input type="text">
+      </form>
+      <a href="#">
+          <span class="material-icons-outlined">search</span>
+      </a>
+  </nav>
+  <!-- Main content -->
+  <main class="grid-container">
+    <img class="image" src="/images/stakbogladen.jpg" alt="Stakbogladen">
+    <!-- Studiestart med knapper -->
+    <section class="studiestart">
+        <h2>Klar til studiestart?</h2>
+        <div class="button-box">
+            <div class="boglister">
+              <a href="boglister.html">Boglister</a></div>
+            <button class="skriveredskaber">Skriveredskaber</button>
+            <button class="mapper">Mapper</button>
+            <button class="papir">Papir</button>
+        </div>
+    </section>
+    <!-- Promo om studierabat -->
+    <aside class="rabat">
+        <h2 class="rabat-heading"><span class="ten-percent">10%</span> Studierabat på alle bøger!</h2>
+        <p class="rabat-text">Rabatten fratrækkes ved kassen</p>
+    </aside>
+    <!-- Karrusel med nyeste udgivelser -->
+    <section class="nyt">
+        <h2>Nye udgivelser</h2>
+        <div class="slider">
+            <input type="radio" name="toggle" id="btn-1" checked>
+            <input type="radio" name="toggle" id="btn-2">
+            <input type="radio" name="toggle" id="btn-3">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+            <ul class="slides">
+              <li class="slide">
+                <div class="slide-content">
+                  <h3 class="slide-title">Opgaveskrivning for Praktikere</h3>
+                  <p class="slide-text">Forfatter: Mia Søiberg et al. <br>2016<br>228,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/opgaveskrivning.png" alt="Opgaveskrivning for Praktikere">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h3 class="slide-title">Studieliv uden stress</h3>
+                  <p class="slide-text">Forfatter: Thomas Pape et al.<br>2014<br>319,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/studieliv.png" alt="Studieliv">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h3 class="slide-title">Aarhusguiden</h3>
+                  <p class="slide-text">Forfatter: Søren Hein Rasmussen og Lise Hansen<br>2019<br>200,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/aarhusguiden.png" alt="Aarhusguiden">
+                </p>
+              </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Karrusel med bestsellers -->
+    <section class="bestsellers">
+        <h2>Bestsellers</h2>
+        <div class="slider-two">
+            <input type="radio" name="toggle-two" id="btn-4" checked>
+            <input type="radio" name="toggle-two" id="btn-5">
+            <input type="radio" name="toggle-two" id="btn-6">
+            <div class="slider-controls-two">
+              <label for="btn-4"></label>
+              <label for="btn-5"></label>
+              <label for="btn-6"></label>
+            </div>
+            <ul class="slides-two">
+              <li class="slide-two">
+                <div class="slide-content-two">
+                  <h3 class="slide-title-">Modern Scandinavian Design</h3>
+                  <p class="slide-text">Forfatter: Charlotte Fiell et al. <br>2017<br>239,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/design.png" alt="Modern Scandinavian Design">
+                </p>
+              </li>
+              <li class="slide-two">
+                <div class="slide-content-two">
+                  <h3 class="slide-title">Den Gode Opgave</h3>
+                  <p class="slide-text">Forfatter: Lotte Rienecker, Peter Stray Jørgensen<br>2017<br>299,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/opgave.png" alt="Den Gode Opgave">
+                </p>
+              </li>
+              <li class="slide-two">
+                <div class="slide-content-two">
+                  <h3 class="slide-title">Europas Smukkeste Vandreruter</h3>
+                  <p class="slide-text">Diverse forfattere<br>2019<br>250,- DKK</p>
+                  <a href="#" class="slide-link">Føj til kurv</a>
+                </div>
+                <p class="slide-image">
+                  <img src="/images/vandreruter.png" alt="Europas Smukkeste Vandreruter">
+                </p>
+              </li>
+            </ul>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-links">
+          <a href="#" class="footer-links">Kontakt</a>
+          <a href="#" class="footer-links">Om os</a>
+          <a href="#" class="footer-links">FAQ</a>
+      </div>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/Stakbogladen"> <img src="/images/facebook-logo.png" alt="Link to our Facebook page" width="32"> </a>
+          <a href="https://www.instagram.com/stakbogladen/"> <img src="/images/instagram-logo-white.png" alt="Link to our Instagram page" width="32"> </a>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+</html>

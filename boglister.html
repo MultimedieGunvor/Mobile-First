@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forside.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <title>Stakbogladen - Stakkevis af viden</title>
+</head>
+<body>
+    <!-- Header og navigation -->
+    <header class="small_header">
+        <a href="index.html">
+            <img src="/images/logo.png" alt="Logo" width="40">
+            <h1>Stakbogladen</h1>
+        </a>
+        <span class="material-icons-outlined" id="account">account_circle</span>
+        <span class="material-icons-outlined" id="cart">shopping_cart</span>
+        <nav id="ham_nav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="ham_items">
+                <a href="#">Bøger</a>
+                <a href="boglister.html">Boglister</a>
+                <a href="#">Kontorartikler</a>
+                <a href="#">Events</a>
+                <a href="#">Kampagner</a>
+                <a href="#">AU Merchandise</a>
+            </div>
+        </nav>
+    </header>
+    <!--Navigationsbar til bærbar/stationær -->
+    <nav id="bar_nav">
+        <div class="navigation_wrapper">
+            <div class="navigation_items">
+                <ul class="dropdown">
+                    <li><a href="#bøger">Bøger</a>
+                        <ul>
+                            <li><a href="#">Faglitteratur</a></li>
+                            <li><a href="#">Skønlitteratur</a></li>
+                            <li><a href="#">Brugte bøger</a></li>
+                            <li><a href="#">Lej en bog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="boglister.html">Boglister</a>
+                        <ul>
+                            <li><a href="#">For studerende</a></li>
+                            <li><a href="#">For undervisere</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#kontorartikler">Kontorartikler</a>
+                        <ul>
+                        <li><a href="#">Til studiestart</a></li>
+                        <li><a href="#">Mapper</a></li>
+                        <li><a href="#">Skriveredskaber</a></li>
+                        <li><a href="#">Papir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#info">Om os</a>
+                        <ul>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Handelsbetingelser</a></li>
+                            <li><a href="#">Ofte stillede spørgsmål</a></li>    
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#events">Events</a>
+                        <ul>
+                            <li><a href="#">Launch events</a></li>
+                            <li><a href="#">Loppemarked</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#kampagner">Kampagner</a>
+                        <ul>
+                            <li><a href="#">Kaffeglad?</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Søgefelt -->
+    <nav id="searchbar">
+        <form id="search">
+            <input type="text">
+        </form>
+        <a href="#">
+            <span class="material-icons-outlined">search</span>
+        </a>
+    </nav>
+    <main>
+        <h2 class="bog-header">Boglister</h2>
+        <p class="bog-text">Vælg uddannelse for at se din pensumliste</p>
+        <ul class="ul-bogliste">
+            <li>
+                <a href="#" class="bogliste-item">Kollegieblokke og andre papirvarer</a>
+            </li>
+            <li>
+                <a href="#">Autoteknolog (AAMS)</a>
+            </li>
+            <li>
+                <a href="#">Automationsteknolog (AAMS)</a>
+            </li>
+            <li>
+                <a href="#">Adgangskursus - Aarhus</a>
+            </li>
+            <li>
+                <a href="#">Adgangskursus - Herning</a>
+            </li>
+            <li>
+                <a href="#">Adgangskursus (AAMS)</a>
+            </li>
+            <li>
+                <a href="#">Diplomingeniør Herning</a>
+            </li>
+            <li>
+                <a href="#">Diplomingeniør Aarhus</a>
+            </li>
+            <li>
+                <a href="#">Civilingeniør</a>
+            </li>
+            <li>
+                <a href="#">Maskinmester (AAMS)</a>
+            </li>
+            <li>
+                <a href="#">Forretningsingeniør</a>
+            </li>
+            <li>
+                <a href="#">Produktionsteknolog (AAMS)</a>
+            </li>
+            <li>
+                <a href="#">Institut for Forretningsudvikling og Teknologi - Herning</a>
+            </li>
+            <li class="last-item">
+                <a href="#">VIA University College</a>
+            </li>
+        </ul>
+    </main>
+    <aside class="rabat-boglister">
+        <h2 class="rabat-heading">10% Studierabat på alle bøger!</h2>
+        <p class="rabat-text">Rabatten fratrækkes ved kassen</p>
+    </aside>
+    <footer class="footer-boglister">
+        <div class="footer-wrapper">
+          <div class="footer-links">
+              <a href="#" class="footer-links">Kontakt</a>
+              <a href="#" class="footer-links">Om os</a>
+              <a href="#" class="footer-links">FAQ</a>
+          </div>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/Stakbogladen"> <img src="/images/facebook-logo.png" alt="Link to our Facebook page" width="32"> </a>
+              <a href="https://www.instagram.com/stakbogladen/"> <img src="/images/instagram-logo-white.png" alt="Link to our Instagram page" width="32"> </a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,628 @@
+/* CSS reset*/
+*,
+:after, 
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+/* Generel styling */
+body {
+    background-color: white;
+    font-family: 'Century Gothic', sans-serif;
+    color: #082546;
+}
+h1, h2 {
+    font-variant-caps: small-caps;
+    font-size: xx-large;
+}
+/* Header og navigationsmenu */
+header {
+    background-color: #082546;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+header a {
+    text-decoration: none;
+    padding: 10px;
+}
+header h1 {
+    display: none;
+}
+header span {
+    padding: 25px;
+}
+
+#hamburger {
+    display: none;
+}
+#ham_items {
+    display: flex;
+    display: none;
+}
+#ham_items a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #082546;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}
+#ham_nav label {
+    display: inline-block;
+    color: white;
+    background: #082546;
+    font-size: 1.2em;
+    padding: 25px;
+}
+#ham_nav input:checked ~ #ham_items {display: block;}
+#searchbar {
+    background-color: #ccc8cf;
+    color: black;
+    display: flex;
+}
+/* Navigationsbjælke til laptop og desktop */
+#bar_nav {
+    display: none;
+    background-color: #1c3867;
+}
+.dropdown li {
+    list-style: none;
+}
+#big_searchbar {
+    background-color: #ccc8cf;
+    color: black;
+    display: none;
+    width: 200px;
+}
+nav form {
+    width: 100%;
+    padding-left: 5px;
+}
+nav span {
+    padding: 5px;
+    margin: 7px;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: white;
+}
+input {
+    width:100%;
+    padding: 12px;
+    margin: 8px;
+    background-color: #f4f0f8;
+}
+.navigation_wrapper {
+    color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.navigation_items {
+    display: flex;
+    justify-content: space-around;
+}
+.dropdown {
+    margin: 0;
+    padding: 0;
+    background-color: #1c3867;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown li a {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+}
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #1c3867;
+}
+.dropdown li ul li a {
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+.dropdown li ul li a:hover {
+    background-color: #082546;
+}
+ul li:hover>ul {
+    display: block;
+}
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0px;
+}
+/* Billede */
+.image {
+    display: none;
+}
+/* Studiestart med knapper */
+.studiestart {
+    width: 100%;
+    text-align: center;
+}
+.studiestart h2 {
+    padding: 10px;
+}
+.button-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+button,
+.boglister {
+    background-color: #082546;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 18px;
+    width: 50%;
+    border: white solid 1px;
+    padding: 30px;
+}
+button a,
+.boglister a {
+    text-decoration: none;
+    color: white;
+}
+/* Studierabat - promo */
+.rabat,
+.rabat-boglister {
+    background-color: #5a0331;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Nyeste udgivelser  plus bestsellers- karrusel fundet hos: https://codepen.io/Luxplanjay/pen/JparYJ */
+.nyt {
+    width: 100%;
+    text-align: center;
+}
+.nyt h2 {
+    padding: 10px;
+}
+.bestsellers {
+    width: 100%;
+    text-align: center;
+}
+.bestsellers h2 {
+    padding: 10px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.slider-two {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}  
+.slider-controls {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    transform: translatex(-50%);
+    z-index: 1000;
+    list-style: none;
+    text-align: center;
+}
+.slider-controls-two {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    transform: translatex(-50%);
+    z-index: 1000;
+    list-style: none;
+    text-align: center;
+}  
+.slider input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider-two input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+.slider-controls label {
+    display: inline-block;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #212121;
+    transition: background-color 0.2s linear;
+}
+.slider-controls-two label {
+    display: inline-block;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #212121;
+    transition: background-color 0.2s linear;
+}  
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+    background-color: #5a0331;
+} 
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: #5a0331;
+}
+  
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #5a0331;
+}
+#btn-4:checked ~ .slider-controls-two label[for="btn-4"] {
+    background-color: #5a0331;
+} 
+#btn-5:checked ~ .slider-controls-two label[for="btn-5"] {
+    background-color: #5a0331;
+}
+  
+#btn-6:checked ~ .slider-controls-two label[for="btn-6"] {
+    background-color: #5a0331;
+}  
+  /* SLIDES */
+  
+.slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.slides-two {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: transform 250ms linear;
+}
+.slide-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: transform 250ms linear;
+}
+.slide-content {
+    width: 100%;
+    text-align: left;
+}
+.slide-content-two {
+    width: 100%;
+    text-align: left;
+}
+.slide-title {
+    margin-bottom: 20px;
+}
+.slide-text {
+    margin-bottom: 20px;
+}
+.slide-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #d8127c;
+}
+.slide-image img {
+    max-width: 100%;
+}
+  
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-4:checked ~ .slides-two .slide-two:nth-child(1) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-5:checked ~ .slides-two .slide-two:nth-child(2) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-6:checked ~ .slides-two .slide-two:nth-child(3) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-4:not(:checked) ~ .slides-two .slide-two:nth-child(1) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-5:not(:checked) ~ .slides-two .slide-two:nth-child(2) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-6:not(:checked) ~ .slides-two .slide-two:nth-child(3) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+@keyframes swap-out {
+    0% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translatex(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translatex(100%);
+    }
+}
+.footer,
+.footer-boglister{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #082546;
+    height: 8rem;
+}
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    
+    /* Sørger for mellemrum imellem links */
+    width: 100%;
+    
+    /* padding gør det lidt nemmere at trykke på links */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons img{
+    margin: 1rem;
+}
+
+/* Bogliste-side */
+.bog-header {
+    text-align: center;
+    padding: 10px;
+}
+.bog-text {
+    font-size: 18px;
+    padding: 10px;
+}
+.ul-bogliste {
+    padding: 10px;
+
+}
+.ul-bogliste li {
+    padding: 5px;
+    list-style: none;
+    font-size: 18px;
+    color: #082546;
+}
+.bogliste-item{
+    text-decoration: none;
+}
+.ul-bogliste li a{
+    text-decoration: none;
+}
+.last-item {
+    margin-bottom: 10px;
+    /* padding-bottom: 100px; */
+}
+@media (min-width: 420px){
+    .footer-wrapper{
+        flex-direction: row;
+    }
+}
+/* Media queries for tablets*/
+@media screen and (min-width: 500px) {
+    header h1 {
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    nav a {
+        align-self: center;
+    }
+    .studiestart h2 {
+        padding: 20px;
+    }
+    button,
+    .boglister {
+        padding: 40px;
+        font-size: 20px;
+    }
+    .rabat {
+        padding: 30px;
+    }
+}
+/* Media queries for laptop og desktop */
+@media screen and (min-width: 1000px) {
+    #ham_nav {
+        display: none;
+    }
+    #bar_nav {
+        display: block;
+    }
+    #searchbar {
+        width: 30%;
+        position: absolute;
+        top: 20px;
+        right: 400px;
+    }
+    header a {
+        position: relative;
+        left: 50px;
+        display: flex;
+        padding: 15px;
+    }
+    h1 {
+        padding: 10px;
+    }
+    #account {
+        position: absolute;
+        right: 300px;
+    }
+    #cart {
+        position: absolute;
+        right: 200px;
+    }
+    .grid-container {
+        /* max-width: 1400px; */
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        'left header header header header header header header header header header header header'
+        'left top top top top top top top top top top top top'
+        'left top top top top top top top top top top top top'
+        'left top top top top top top top top top top top top'
+        'left middle middle middle middle middle middle middle middle middle middle middle middle'
+        'left middle middle middle middle middle middle middle middle middle middle middle middle'
+        'left middle middle middle middle middle middle middle middle middle middle middle middle'
+        'left bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom'
+        'left bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom'
+        'left bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom';
+    }
+    .image {
+        display: inline;
+        grid-area: header;
+        width: 100%;
+        margin: 0 auto;
+        }
+    .studiestart {
+        grid-area: top;
+        max-width: 1400px;
+        margin: 35px auto;
+    }
+    button,
+    .boglister {
+        width: 25%;
+        border: white solid 10px;
+    }
+    .rabat {
+        grid-area: left;
+        max-width: 300px;
+    }
+    .ten-percent {
+        display: block;
+        font-size: 120px;
+    }
+    .nyt {
+        grid-area: middle;
+        width: 700px;
+        margin: 35px auto;
+    }
+    .bestsellers {
+        grid-area: bottom;
+        width: 700px;
+        margin: 50px auto;
+    }
+    .bog-header {
+        margin: 50px;
+    }
+    .bog-text {
+        text-align: center;
+    }
+    .ul-bogliste {
+        text-align: center;
+    }
+    .rabat-boglister {
+        display: none;
+    }
+    .footer-boglister {
+        position: static;
+        bottom: 0;
+    }
+
+
+}
